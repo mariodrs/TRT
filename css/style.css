@@ -41,14 +41,18 @@ html,body {
   min-height: 100vh;
   background: #F8F8F8;
   z-index: 998;
+  border: 2px solid green;
 }
 
 .contact-page{
   position: relative;
   height: 100vh;
-  min-height: 100vh;
-  background: #F8F8F8;
-  z-index: 998;
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../images/contact_background.jpg'), #F8F8F8;
+  background-position: center center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+     z-index: 998;
 }
 
 /*----------------------------------------------------------------
@@ -189,7 +193,7 @@ a > button{
   cursor: pointer;
   transition-duration: 0.2s;
   -webkit-transition-duration: 0.2s;
-  border-radius: 40px;
+  border-radius: 5px;
   text-transform: uppercase;
 }
 

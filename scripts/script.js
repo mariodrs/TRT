@@ -18,19 +18,29 @@ document.onclick = function(clickEvent){
 var lastScrollTop = 0 ;
   banner = document.getElementById("banner");
   nav = document.getElementById("header");
+  //faq = document.getElementById("faq-title");
+
 window.addEventListener("scroll", function() {
   var scrollTop = window.pageYOffset || document
   .documentElement.scrollTop;
   if (scrollTop > lastScrollTop) {
     banner.style.top = "-8vh";
     banner.style.transition = ".5s";
+
     nav.style.top = "-8vh";
     nav.style.transition = ".5s";
+
+    faq.style.padding = "1em 0 1em 0";
+    faq.style.transition = ".5s";
   }else {
     banner.style.top = "0";
     banner.style.transition = ".5s";
+
     nav.style.top = "0";
     nav.style.transition = ".5s";
+
+    faq.style.padding = "4em 0 1em 0";
+    faq.style.transition = ".5s";
   }
   lastScrollTop = scrollTop;
 })

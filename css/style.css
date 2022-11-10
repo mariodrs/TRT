@@ -41,7 +41,7 @@ html,body {
   min-height: 100vh;
   background: #F8F8F8;
   z-index: 998;
-  border: 2px solid green;
+  /*border: 2px solid green;*/
 }
 
 .contact-page{

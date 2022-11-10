@@ -19,6 +19,32 @@ html,body {
      z-index: 998;
 }
 
+.center-screen {
+  position: absolute;
+  width: 80vw;
+  padding: 10px;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: -99;
+  border: green solid 2px;
+  margin: 2.5em 0 1em 0;
+}
+
+.center-screen h2{
+  margin: 0;
+  font-size: 5vw;
+  border: yellow solid 2px;
+}
+
+.center-screen p{
+  margin: 0;
+  border: red solid 2px;
+  font-size: 3vw;
+}
+
 .about-page{
   position: relative;
   min-height: 100vh;
@@ -41,7 +67,7 @@ html,body {
   min-height: 100vh;
   background: #F8F8F8;
   z-index: 998;
-  /*border: 2px solid green;*/
+  border: 2px solid green;
 }
 
 .contact-page{
@@ -62,7 +88,7 @@ html,body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: fixed;
   width: 100vw;
   background: #E5AF00;
   z-index: 999999;
@@ -98,10 +124,6 @@ html,body {
   transition: 0.3s;
 }
 
-.navall{
-position: fixed;
-z-index: 999;
-}
 
 
 /*----------------------------------------------------------------
@@ -121,7 +143,8 @@ nav .close-button {
 }
 
 header{
-  position: relative;
+  position: fixed;
+  top: 8vh;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -254,6 +277,11 @@ footer img{
 .cv{
   display: inline-block;
 }
+
+.center-screen {
+  top: 15%;
+}
+
 
 #overlay.active {
   position: absolute;

@@ -4,10 +4,15 @@
 }
 
 #faq {
-  max-width: 700px;
-  margin: auto;
-  padding: 0 15px;
+  position: absolute;
+  width: 80%;
+  padding: calc(8vh + 12px) 15px 15px 15px;
   text-align: center;
+  border: 2px solid orange;
+
+  top: 52.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #faq section.faq {
@@ -31,10 +36,10 @@
 
 #faq h1 {
   font-size: calc(16px + 1.5vw);
+  margin-bottom: 15px;
   font-weight: 700;
   letter-spacing: 6px;
   color: #000;
-  margin: 2.5em 0 1em 0;
   border: 2px solid red;
 }
 

@@ -24,7 +24,7 @@ html,body {
   position: absolute;
   width: 90vw;
   padding: 10px;
-  top: 50%;
+  top: calc(50% + 4vh);
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -307,6 +307,10 @@ footer img{
 
 .center-screen video{
   width: 100%;
+}
+
+.faq-page{
+  padding: calc(35px + 1vh) 0 0 0;
 }
 
 #overlay.active {

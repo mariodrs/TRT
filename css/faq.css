@@ -6,11 +6,11 @@
 #faq {
   position: absolute;
   width: 80%;
-  padding: calc(8vh + 12px) 15px 15px 15px;
+  padding: 15px;
   text-align: center;
   border: 2px solid orange;
 
-  top: 52.5%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }

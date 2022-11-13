@@ -30,6 +30,9 @@ window.addEventListener("scroll", function() {
     nav.style.top = "0vh";
     nav.style.transition = ".5s";
 
+    centerscreen.style.top = "50%";
+    centerscreen.style.transition = ".5s";
+
   }else {
     banner.style.top = "0";
     banner.style.transition = ".5s";
@@ -37,8 +40,10 @@ window.addEventListener("scroll", function() {
     nav.style.top = "8vh";
     nav.style.transition = ".5s";
 
+    centerscreen.style.top = "calc(50% + 4vh)";
+    centerscreen.style.transition = ".5s";
   }
-  lastScrollTop = scrollTop;
+  //lastScrollTop = scrollTop;
 })
 
 //Client side Form validation

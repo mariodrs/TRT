@@ -28,9 +28,9 @@ html,body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  display: inline-block;
   text-align: center;
   z-index: -99;
-  border: green solid 2px;
   margin: 0;
   word-wrap: break-word;
 }
@@ -38,12 +38,10 @@ html,body {
 .center-screen h2{
   margin: 0;
   font-size: 40px;
-  border: yellow solid 2px;
 }
 
 .center-screen p{
   margin: 0;
-  border: red solid 2px;
   font-size: 33px;
 }
 
@@ -55,11 +53,41 @@ html,body {
   border-radius: 5px;
 }
 
-.center-screen button{
-  position: relative;
+.home-btn { /* centres button */
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 20px;
-  width: 40%;
 }
+
+/* button styling */
+.home-btn button {
+	display: list-item;
+	color:black;
+	background-color: white;
+	border: none;
+	padding: 2vh 5vh;
+	text-align: center;
+	cursor: pointer;
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: calc(.6rem + .7vh);
+	text-transform: uppercase;
+	font-family: 'Cabin', sans-serif;
+}
+
+/* button hover */
+.home-btn button:hover {
+	background: black;
+	color: white;
+	border: .5px white solid;
+	box-shadow: 3px white inset;
+	cursor: pointer;
+}
+
 
 /*----------------------------------------------------------------
 [ About ]*/
@@ -69,7 +97,7 @@ html,body {
   z-index: 998;
   height: -webkit-fill-available;
   background: linear-gradient(-170deg, #F8F8F8 50%, #202A44 50%);
-
+  border: 2px solid black;
 }
 
 
@@ -81,6 +109,7 @@ html,body {
   min-height: 100vh;
   background: linear-gradient(-170deg, #202A44 50%, #F8F8F8 50%);
   z-index: 998;
+  border: 2px solid black;
 }
 
 
@@ -91,7 +120,17 @@ html,body {
   min-height: 100vh;
   background: #F8F8F8;
   z-index: 998;
-  border: 2px solid green;
+  border: 2px solid black;
+}
+
+/*----------------------------------------------------------------
+[ FAQ ]*/
+.reviews-page{
+  position: relative;
+  min-height: 100vh;
+  background: #F8F8F8;
+  z-index: 998;
+  border: 2px solid black;
 }
 
 

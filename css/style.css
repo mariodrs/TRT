@@ -47,7 +47,7 @@ html,body {
 
 .center-screen video{
   margin-top: 20px;
-  width: 60%;
+  width: 45vw;
   height: auto;
   position: relative;
   border-radius: 5px;
@@ -65,7 +65,7 @@ html,body {
 .home-btn button {
 	display: list-item;
 	color:black;
-	background-color: white;
+	background-color: #E5AF00;
 	border: none;
 	padding: 2vh 5vh;
 	text-align: center;
@@ -81,9 +81,8 @@ html,body {
 
 /* button hover */
 .home-btn button:hover {
-	background: black;
-	color: white;
-	border: .5px white solid;
+	background: white;
+	color: black;
 	box-shadow: 3px white inset;
 	cursor: pointer;
 }

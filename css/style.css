@@ -9,7 +9,7 @@ html,body {
 
 /*----------------------------------------------------------------
 [ Home/Index ]*/
-.index-page{
+.home-page{
   position: relative;
   height: 100vh;
   background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../images/backgroundtest.jpeg'), #F8F8F8;
@@ -20,7 +20,7 @@ html,body {
      z-index: 998;
 }
 
-.center-screen {
+.homecenter {
   position: absolute;
   width: 90vw;
   padding: 10px;
@@ -35,17 +35,17 @@ html,body {
   word-wrap: break-word;
 }
 
-.center-screen h2{
+.homecenter h2{
   margin: 0;
   font-size: 40px;
 }
 
-.center-screen p{
+.homecenter p{
   margin: 0;
   font-size: 33px;
 }
 
-.center-screen video{
+.homecenter video{
   margin-top: 20px;
   width: 45vw;
   height: auto;
@@ -87,7 +87,6 @@ html,body {
 	cursor: pointer;
 }
 
-
 /*----------------------------------------------------------------
 [ About ]*/
 .about-page{
@@ -97,20 +96,19 @@ html,body {
   height: -webkit-fill-available;
   background: linear-gradient(-170deg, #F8F8F8 50%, #202A44 50%);
   border: 2px solid black;
+  text-align: center;
 }
-
 
 /*----------------------------------------------------------------
 [ Services ]*/
 .services-page{
   position: relative;
-  text-align: center;
   min-height: 100vh;
   background: linear-gradient(-170deg, #202A44 50%, #F8F8F8 50%);
   z-index: 998;
   border: 2px solid black;
+  text-align: center;
 }
-
 
 /*----------------------------------------------------------------
 [ FAQ ]*/
@@ -120,6 +118,7 @@ html,body {
   background: #F8F8F8;
   z-index: 998;
   border: 2px solid black;
+  text-align: center;
 }
 
 /*----------------------------------------------------------------
@@ -130,8 +129,19 @@ html,body {
   background: #F8F8F8;
   z-index: 998;
   border: 2px solid black;
+  text-align: center;
 }
 
+/*----------------------------------------------------------------
+[ FAQ ]*/
+.booking-page{
+  position: relative;
+  min-height: 100vh;
+  background: #F8F8F8;
+  z-index: 998;
+  border: 2px solid black;
+  text-align: center;
+}
 
 /*----------------------------------------------------------------
 [ Contact ]*/
@@ -145,7 +155,6 @@ html,body {
      background-size: cover;
      z-index: 998;
 }
-
 
 /*----------------------------------------------------------------
 [ Banner ]*/
@@ -188,8 +197,6 @@ html,body {
   background-color: green;
   transition: 0.3s;
 }
-
-
 
 /*----------------------------------------------------------------
 [ Navigation - desktop ]*/
@@ -326,8 +333,6 @@ footer img{
   bottom: 2px;
 }
 
-
-
 /*----------------------------------------------------------------
 [ Navigation - mobile ]*/
 @media (max-width: 768px) {
@@ -343,7 +348,7 @@ footer img{
   display: inline-block;
 }
 
-.center-screen video{
+.homecenter video{
   width: 100%;
 }
 
@@ -474,9 +479,6 @@ header button{
   -webkit-animation: menu-item-anim .6s forwards 2s ease-in-out;
           animation: menu-item-anim .6s forwards 2s ease-in-out;
 }
-
-
-
 
 @-webkit-keyframes slide-menu {
   from {
